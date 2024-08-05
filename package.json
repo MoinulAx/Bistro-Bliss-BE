@@ -1,23 +1,24 @@
-
-  {
+{
     "name": "bistro-bliss-be",
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "nodemon server.js",
-      "dbinit": "psql -U postgres -f db/schema.sql",
-      "dbtrig": "psql -U postgres -f db/triggers.sql",
-      "dbseed": "psql -U postgres -f db/seed.sql"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "db:init": "psql -U postgres -f db/schema.sql",
+        "db:trig": "psql -U postgres -f db/triggers.sql",
+        "db:seed": "psql -U postgres -f db/seed.sql"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "cors": "^2.8.5",
-      "dotenv": "^16.4.5",
-      "express": "^4.19.2",
-      "pg-promise": "^11.9.1"
+        "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2",
+        "pg-promise": "^11.9.1",
+        "sql": "^0.78.0"
     }
-  }
-  
+}
